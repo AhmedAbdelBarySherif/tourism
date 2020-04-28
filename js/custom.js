@@ -1,8 +1,5 @@
 $(document).ready(function() {
 
-    //trigger wow
-    new WOW().init();
-
     // Home Page -> Trigger Home Slider
     $('.carousel').carousel({
         interval: 1000000
@@ -44,8 +41,14 @@ $(document).ready(function() {
             600:{items:3},
             1000:{items:4}
             },
-        slideBy:2,
-        autoplayTimeout:1000
+        slideBy: 1,
+        autoplayTimeout: 4000,
+        autoplay: true
+    });
+
+    $('#owlNext').click(function(e) {
+        e.preventDefault();
+        $('.countryServices__owl .owl-next').click();
     });
 
     // Country Page -> adabt padding-left of countryServices__owl div as above container offset left
@@ -73,7 +76,5 @@ $(document).ready(function() {
             });
         });
     });
-
-    
 
 });

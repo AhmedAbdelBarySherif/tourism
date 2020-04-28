@@ -1270,6 +1270,56 @@ a {
 .articleContact__submit:hover {
     box-shadow: var(--main-shadow);
 }
+
+.article__comments {
+    margin-bottom: 40px;
+}
+
+.article__reply {
+    border: 1px solid var(--gray-color);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px #ddd;
+    background: #ecf0f1;
+    margin-bottom: 40px;
+}
+
+.article__reply__head {
+    overflow: hidden;
+}
+
+.article__reply__head img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 15px;
+}
+
+.article__reply__head ul {
+    margin-bottom: 0;
+    float: left;
+} 
+
+.article__reply__head ul h4 {
+    font-size: 14px;
+    color: #898989
+}
+
+.article__reply__head ul span {
+    display: inline-block;
+    width: 50px;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--orange-color);
+}
+
+.article__reply__head > span {
+    float: right;
+    font-style: italic;
+    color: var(--orange-color);
+}
 /*======================================== End Article Page ========================================*/
 
 /*========== Start helper classes ==========*/
@@ -1894,6 +1944,10 @@ a {
         width: 200px;
         margin-top: 25px;
         font-size: 16px;
+    }
+
+    .article__reply__head > span {
+        font-size: 10px;
     }
 
 }
